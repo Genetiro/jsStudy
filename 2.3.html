@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict';
+        let a = Number (prompt('Введите первое целое число'));
+        let b = Number (prompt('Введите второе целое число'));
+        if ( Number.isInteger(a) && Number.isInteger(b) && a >= 0 && b >= 0 ){
+            let c = (a - b);
+            alert(c);
+        } else if (Number.isInteger(a) && Number.isInteger(b) && a < 0 && b < 0) {
+            let d = a*b;
+            alert(d);
+        } else if (Number.isInteger(a) && Number.isInteger(b)) { 
+            let e = a + b;
+            alert(e);
+        } else {
+           alert('Введите целое число')
+        }
+    </script>
+</body>
+</html>

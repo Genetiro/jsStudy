@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict';
+        function Summm(a, b){
+            return(a + b);
+        }
+        function Minus(a, b){
+            return(a-b);
+        }
+        function Split(a, b){
+            return(a/b);
+        }
+        function Multip(a, b){
+            return(a*b);
+        }
+        let arg1 = Number(prompt('введите первое число'));
+        let arg2 = Number(prompt('введите второе число'));
+        let operation = prompt('Введите операцию, например "деление"');
+        function mathOperation(arg1, arg2, operation){
+            
+            switch (operation){
+                case 'сложение':
+                    return Summm(arg1, arg2);
+                case 'вычитание':
+                    return Minus(arg1, arg2);
+                case 'умножение':
+                    return Multip(arg1, arg2);
+                case 'деление':
+                    return Split(arg1, arg2);
+            }
+        }
+        let result = mathOperation(arg1, arg2, operation);
+        alert(result);
+    </script>
+</body>
+</html>
