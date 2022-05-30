@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        'use strict';
+        let i = Number(prompt('Введите целое число от 0 до 999'));
+
+        function inputNum(i) {
+            if (Number.isInteger(i) && i >= 0 && i <= 999) {
+                return {
+                    units: i % 10,
+                    tens: Math.floor((i % 100) / 10),
+                    hundreds: Math.floor(i / 100)
+                }
+            } else {
+                alert('Введите целое число из диапазона');
+                return {}
+            }
+        }
+
+        console.log(inputNum(i));
+    </script>
+</body>
+
+</html>
