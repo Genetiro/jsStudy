@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="card hidden">
+        Lorem ipsum dolor sit.
+    </div>
+    <div class="card">
+        Lorem ipsum dolor sit.
+    </div>
+    <div class="card hidden">
+        Lorem ipsum dolor sit.
+    </div>
+    <div class="card">
+        Lorem ipsum dolor sit.
+    </div>
+
+    <!-- Задание.
+    1. Найдите все "карточки" с классом .card.
+    2. Проверьте есть ли у карточки класс hidden с помощью метода contains(),
+    и если есть, то удалите с помощью метода remove(). -->
+    <script>
+        'use strict';
+        let a = document.querySelectorAll('.card');
+        //let b = document.querySelectorAll('.hidden');
+        a.forEach(function() {
+            for (let i = 0; i < a.length; i++) {
+                if (a[i].classList.contains('hidden')) {
+                    a[i].classList.remove('hidden');
+                };
+            };
+
+        });
+
+
+
+
+
+        /* var buttons = document.querySelectorAll('.info-block'); buttons.forEach(el =>
+                el.addEventListener('click', function() {
+                    this.querySelectorAll('img').forEach(img => img.classList.toggle('hidden'));
+                    this.querySelector('iframe').classList.toggle('hidden');
+                });
+            );
+        }*/
+    </script>
+</body>
+
+</html>
